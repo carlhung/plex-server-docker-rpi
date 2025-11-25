@@ -1,3 +1,23 @@
+build the image:
+```sh
+docker build -t lingho/plex:latest  .
+```
+
+run image:
+```sh
+docker run \
+  -d \
+  --name plex \
+  --net host \
+  --restart always \
+  --volume $(echo $HOME)/externalDisk/plex/config:/config \
+  --volume $(echo $HOME)/externalDisk/plex/data:/data \
+  --volume $(echo $HOME)/externalDisk/plex/transcode:/transcode \
+  lingho/plex:latest
+```
+
+--
+
 Docker images: https://hub.docker.com/r/greensheep/plex-server-docker-rpi/tags
 
 # Plex Server for Raspberry Pi

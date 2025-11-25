@@ -16,8 +16,9 @@ docker run \
   lingho/plex:latest
 ```
 
---
-
+---
+The Following can be ignored. It is inherited by the previous repo.
+---
 Docker images: https://hub.docker.com/r/greensheep/plex-server-docker-rpi/tags
 
 # Plex Server for Raspberry Pi
